@@ -111,13 +111,13 @@ body {
 @media (max-width: 640px) {
   .gallery-grid {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px 160px 160px;
+    grid-template-rows: 160px 160px;
   }
-  .gallery-grid .photo-1 { grid-column: 1 / 3; grid-row: 1; }
-  .gallery-grid .photo-2 { grid-column: 1;     grid-row: 2; }
-  .gallery-grid .photo-3 { grid-column: 2;     grid-row: 2; }
-  .gallery-grid .photo-4 { grid-column: 1;     grid-row: 3; }
-  .gallery-grid .photo-5 { grid-column: 2;     grid-row: 3; }
+  .gallery-grid .photo-1 { display: none; }
+  .gallery-grid .photo-2 { grid-column: 1; grid-row: 1; }
+  .gallery-grid .photo-3 { grid-column: 2; grid-row: 1; }
+  .gallery-grid .photo-4 { grid-column: 1; grid-row: 2; }
+  .gallery-grid .photo-5 { grid-column: 2; grid-row: 2; }
 }
 
 /* ============================================================
@@ -548,3 +548,205 @@ textarea.form-input {
    ============================================================ */
 .text-display { font-family: 'Playfair Display', serif; }
 .stars        { color: #f59e0b; letter-spacing: 0.1em; }
+
+/* ============================================================
+   GALLERY COLLAGE — hover + 3D tilt effects
+   ============================================================ */
+.gallery-item {
+  will-change: transform;
+  /* transition set dynamically by JS; base box-shadow transition here */
+  transition: box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+  box-shadow: 0 16px 48px rgba(44,24,16,0.18);
+  z-index: 2;
+}
+
+/* ============================================================
+   HERO — fluid title + decorative blob
+   ============================================================ */
+.hero-title {
+  font-size: clamp(2rem, 3.5vw + 0.8rem, 3.8rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.hero-blob {
+  position: absolute;
+  inset: -80px;
+  background: radial-gradient(ellipse 55% 60% at 70% 40%,
+    rgba(74,103,65,0.10) 0%,
+    rgba(201,106,59,0.06) 60%,
+    transparent 100%);
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(40px);
+}
+
+/* Hero eyebrow — gentle pulse on the badge */
+.hero-eyebrow-badge {
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.hero-eyebrow-badge:hover {
+  box-shadow: 0 0 0 4px rgba(74,103,65,0.1);
+  border-color: rgba(74,103,65,0.4);
+}
+
+/* Floating cards — extra polish */
+.hero-float-card {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* ============================================================
+   GALLERY — photo hover zoom + overlay
+   ============================================================ */
+.gallery-grid > div {
+  overflow: hidden;
+  transition: box-shadow 0.35s ease;
+}
+
+.gallery-grid > div:hover {
+  box-shadow: 0 12px 40px rgba(44,24,16,0.14);
+}
+
+.gallery-grid > div .photo-placeholder,
+.gallery-grid > div img {
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-grid > div:hover .photo-placeholder,
+.gallery-grid > div:hover img {
+  transform: scale(1.06);
+}
+
+/* Gallery overlay on hover */
+.gallery-grid > div {
+  position: relative;
+}
+
+.gallery-grid > div::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg,
+    rgba(74,103,65,0.25) 0%,
+    rgba(201,106,59,0.15) 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  z-index: 1;
+  border-radius: inherit;
+}
+
+.gallery-grid > div:hover::after {
+  opacity: 1;
+}
+
+/* ============================================================
+   MICRO-INTERACTIONS — enhanced states
+   ============================================================ */
+
+/* Trust badges */
+.trust-badge {
+  transition: background 0.25s ease, border-color 0.25s ease,
+              color 0.25s ease, transform 0.25s ease;
+}
+.trust-badge:hover {
+  background: rgba(74,103,65,0.12);
+  border-color: var(--moss-light);
+  color: var(--moss-dark);
+  transform: translateY(-2px);
+}
+
+/* Contact method cards — richer hover */
+.contact-method {
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow: 0 2px 8px rgba(44,24,16,0.04);
+}
+.contact-method:hover {
+  transform: translateX(6px);
+  box-shadow: 0 8px 24px rgba(44,24,16,0.10);
+}
+
+/* Service cards — smoother spring-like feel */
+.service-card {
+  transition: background 0.35s ease, border-color 0.35s ease,
+              color 0.35s ease, transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
+              box-shadow 0.35s ease;
+}
+
+/* Primary button — subtle pulse glow on hover */
+.btn-primary {
+  transition: background 0.3s ease, transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+              box-shadow 0.3s ease;
+}
+
+/* Ghost button — fill slide effect */
+.btn-ghost {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+.btn-ghost::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--brown);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  z-index: -1;
+  border-radius: inherit;
+}
+.btn-ghost:hover::before { transform: scaleX(1); }
+.btn-ghost:hover { color: var(--cream); background: transparent; }
+
+/* Nav link — faster, snappier underline */
+.nav-link::after {
+  transition: width 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* ============================================================
+   ABOUT SECTION — profile photo ring animation
+   ============================================================ */
+.profile-ring {
+  position: absolute;
+  inset: -10px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: linear-gradient(135deg, rgba(201,106,59,0.3), rgba(74,103,65,0.3))
+              border-box;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  transition: opacity 0.4s ease;
+  opacity: 0.6;
+}
+
+.profile-photo-wrap:hover .profile-ring {
+  opacity: 1;
+  animation: ring-spin 8s linear infinite;
+}
+
+@keyframes ring-spin {
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gallery-grid > div .photo-placeholder,
+  .gallery-grid > div img,
+  .btn-ghost::before,
+  .nav-link::after,
+  .profile-photo-wrap:hover .profile-ring {
+    transition: none;
+    animation: none;
+  }
+}

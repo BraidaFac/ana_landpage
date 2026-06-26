@@ -12,7 +12,7 @@ const SITE = {
     name: "Ana Paula Ferrer",
 
     // City shown in hero eyebrow & footer
-    city: "Papamoa, New Zealand",
+    city: "Frankton, New Zealand",
 
     // WhatsApp number — international format, NO + NO spaces
     // New Zealand example: 6421234567  (64 = NZ code, rest = your number)
@@ -41,13 +41,17 @@ const SITE = {
   // Replace with a URL or a relative path (e.g. 'images/hero.jpg').
   photos: {
     hero: "./images/goldens.JPG", // Hero section: you with a dog (portrait or landscape)
-    profile: "./images/mavick.jpeg", // About Me: circular profile photo
+    profile: "./images/vet.jpeg", // About Me: circular profile photo
     gallery1: "./images/mavick.jpeg", // Gallery: main tall photo — you walking dogs
     gallery2: "./images/mavrickafuera.jpeg", // Gallery: close-up with a specific dog
-    gallery3: "./images/goldens.JPG", // Gallery: playing at the park
+    gallery3: "./images/lago.jpeg",
+    gallery4: "./images/huma.jpeg",
+    gallery5: "./images/perros.jpeg",
+    // Gallery: playing at the park
   },
 
-  // ── STATS ──────────────────────────────────────────────────
+  // ── STATS ───────────────────────────
+  // ───────────────────────
   stats: {
     walks: "+500",
     rating: "4.9",
@@ -106,7 +110,7 @@ const SITE = {
     // ══════════════════════════════════════════════════════════
     en: {
       // Meta
-      page_title: "Walks with Ana · Dog Walker — Papamoa, NZ",
+      page_title: "Walks with Ana · Dog Walker — Frankton, NZ",
 
       // Nav
       nav_services: "Services",
@@ -118,7 +122,7 @@ const SITE = {
       nav_cta: "Book a walk 🐾",
 
       // Hero
-      hero_eyebrow: "Dog walker in Papamoa · Available",
+      hero_eyebrow: "Dog walker in Frankton · Available",
       hero_h1_a: "Your dog deserves",
       hero_h1_em: "the best walk",
       hero_h1_b: "of their day.",
@@ -139,7 +143,7 @@ const SITE = {
         { icon: "🩺", text: "Veterinary background" },
         { icon: "📸", text: "Photos every walk" },
         { icon: "✅", text: "Verified walker" },
-        { icon: "📍", text: "Papamoa & nearby areas" },
+        { icon: "📍", text: "Frankton, Hanley Farm & Jack Point" },
         { icon: "🩺", text: "Pet first aid" },
         { icon: "📱", text: "WhatsApp updates" },
         { icon: "🔄", text: "Flexible cancellation" },
@@ -183,8 +187,7 @@ const SITE = {
       step3_p:
         "Choose your preferred days and times. Easy payment by bank transfer.",
       step4_h3: "Photos & walk report",
-      step4_p:
-        "Receive photos during the walk. A full report when we're done.",
+      step4_p: "Receive photos during the walk. A full report when we're done.",
 
       // Gallery / Bio
       gallery_eyebrow: "A little about me",
@@ -193,9 +196,9 @@ const SITE = {
       gallery_bio1:
         "I'm Ana Paula, a veterinarian from Argentina who fell in love with New Zealand and never left. My years working with small animals taught me how to read dogs, handle them safely, and give them the care they truly deserve.",
       gallery_bio2:
-        "Now based in Papamoa, I bring that same dedication to every walk. Whether it's your pup's first outing or their daily routine, I treat every dog with the patience and expertise of a vet — and a whole lot of love.",
+        "Now based in Frankton, I bring that same dedication to every walk. Whether it's your pup's first outing or their daily routine, I treat every dog with the patience and expertise of a vet — and a whole lot of love. I cover Frankton, Hanley Farm and Jack Point.",
       gallery_badge1: "Veterinary background",
-      gallery_badge2: "Papamoa & nearby areas",
+      gallery_badge2: "Frankton, Hanley Farm & Jack Point",
       gallery_badge3: "",
       gallery_badge4: "",
       photo_main_label: "[Photo: Ana walking with dogs]",
@@ -259,11 +262,11 @@ const SITE = {
       // About me
       about_eyebrow: "Hi, I'm",
       about_bio1:
-        "I'm Ana Paula Ferrer, a veterinarian from Argentina now living in Papamoa, New Zealand. After years working with small animals in clinical practice, I decided to take my love for animals outdoors — and dog walking felt like the perfect fit.",
+        "I'm Ana Paula Ferrer, a veterinarian from Argentina now living in Frankton, New Zealand. After years working with small animals in clinical practice, I decided to take my love for animals outdoors — and dog walking felt like the perfect fit.",
       about_bio2:
-        "Every dog I walk gets the same care and attention I gave my patients. I'm happy to travel to nearby areas too, because your dog deserves someone who genuinely understands animals.",
+        "Every dog I walk gets the same care and attention I gave my patients. I cover Frankton, Hanley Farm and Jack Point — because your dog deserves someone who genuinely understands animals.",
       about_badge1: "Veterinarian — small animal specialist",
-      about_badge2: "Based in Papamoa · nearby areas covered",
+      about_badge2: "Based in Frankton · Hanley Farm & Jack Point",
       about_badge3: "",
       about_badge4_pre: " rating · ", // sandwiched between rating + walks (hidden)
       about_badge4_suf: " walks completed",
@@ -303,7 +306,7 @@ const SITE = {
       // Footer
       footer_tagline: "Walks with love, presence and trust.",
       footer_review: "Leave a review ✍️",
-      footer_copyright_suffix: " · Dog walker · Papamoa, NZ",
+      footer_copyright_suffix: " · Dog walker · Frankton, NZ",
 
       // FAB
       fab_wa: "WhatsApp",
@@ -353,7 +356,7 @@ const SITE = {
     // SPANISH
     // ══════════════════════════════════════════════════════════
     es: {
-      page_title: "Walks with Ana · Paseadora de Perros — Papamoa, NZ",
+      page_title: "Walks with Ana · Paseadora de Perros — Frankton, NZ",
 
       nav_services: "Servicios",
       nav_how: "Cómo funciona",
@@ -363,7 +366,7 @@ const SITE = {
       nav_contact: "Contacto",
       nav_cta: "Reservar paseo 🐾",
 
-      hero_eyebrow: "Paseadora en Papamoa · Disponible",
+      hero_eyebrow: "Paseadora en Frankton · Disponible",
       hero_h1_a: "Tu perro merece",
       hero_h1_em: "el mejor paseo",
       hero_h1_b: "de su día.",
@@ -383,7 +386,7 @@ const SITE = {
         { icon: "🩺", text: "Formación veterinaria" },
         { icon: "📸", text: "Fotos en cada paseo" },
         { icon: "✅", text: "Walker verificada" },
-        { icon: "📍", text: "Papamoa y zonas cercanas" },
+        { icon: "📍", text: "Frankton, Hanley Farm y Jack Point" },
         { icon: "🩺", text: "Primeros auxilios pet" },
         { icon: "📱", text: "Actualizaciones por WhatsApp" },
         { icon: "🔄", text: "Cancelación flexible" },
@@ -435,9 +438,9 @@ const SITE = {
       gallery_bio1:
         "Soy Ana Paula, veterinaria argentina enamorada de Nueva Zelanda. Años trabajando con pequeños animales en clínica me enseñaron a leer a los perros, manejarlos con seguridad y darles el cuidado que merecen.",
       gallery_bio2:
-        "Hoy, desde Papamoa, llevo esa misma dedicación a cada paseo. Trato a cada perro con la paciencia y el conocimiento de una veterinaria — y con mucho, mucho cariño.",
+        "Hoy, desde Frankton, llevo esa misma dedicación a cada paseo. Trato a cada perro con la paciencia y el conocimiento de una veterinaria — y con mucho, mucho cariño. Cubro Frankton, Hanley Farm y Jack Point.",
       gallery_badge1: "Formación veterinaria",
-      gallery_badge2: "Papamoa y zonas cercanas",
+      gallery_badge2: "Frankton, Hanley Farm y Jack Point",
       gallery_badge3: "",
       gallery_badge4: "",
       photo_main_label: "[Foto: Ana caminando con perros]",
@@ -498,11 +501,11 @@ const SITE = {
 
       about_eyebrow: "Hola, soy",
       about_bio1:
-        "Soy Ana Paula Ferrer, veterinaria argentina que vive en Papamoa, Nueva Zelanda. Después de años trabajando con pequeños animales en clínica, decidí combinar mi pasión con la libertad del trabajo al aire libre.",
+        "Soy Ana Paula Ferrer, veterinaria argentina que vive en Frankton, Nueva Zelanda. Después de años trabajando con pequeños animales en clínica, decidí combinar mi pasión con la libertad del trabajo al aire libre.",
       about_bio2:
-        "Cada perro que paseo recibe el mismo cuidado y atención que daba a mis pacientes. Me muevo por Papamoa y con gusto llego a las zonas cercanas — tu perro merece alguien que realmente entienda de animales.",
+        "Cada perro que paseo recibe el mismo cuidado y atención que daba a mis pacientes. Me muevo por Frankton, Hanley Farm y Jack Point — tu perro merece alguien que realmente entienda de animales.",
       about_badge1: "Veterinaria — especialista en pequeños animales",
-      about_badge2: "Papamoa y zonas cercanas",
+      about_badge2: "Frankton, Hanley Farm y Jack Point",
       about_badge3: "",
       about_badge4_pre: " de calificación · ",
       about_badge4_suf: " paseos realizados",
@@ -540,7 +543,7 @@ const SITE = {
 
       footer_tagline: "Paseos con amor, presencia y confianza.",
       footer_review: "Dejar reseña ✍️",
-      footer_copyright_suffix: " · Paseadora de perros · Papamoa, NZ",
+      footer_copyright_suffix: " · Paseadora de perros · Frankton, NZ",
 
       fab_wa: "WhatsApp",
       fab_ig: "Instagram",
