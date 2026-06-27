@@ -61,7 +61,7 @@ const SITE = {
   // ── SERVICE PRICES ─────────────────────────────────────────
   services: {
     solo: { price: "NZ$25" },
-    long: { price: "NZ$40" },
+    long: { price: "NZ$30" },
     visit: { price: "NZ$20" },
     daycare: { price: "NZ$80" },
   },
@@ -143,7 +143,7 @@ const SITE = {
         { icon: "🩺", text: "Veterinary background" },
         { icon: "📸", text: "Photos every walk" },
         { icon: "✅", text: "Verified walker" },
-        { icon: "📍", text: "Frankton, Hanley Farm & Jack Point" },
+        { icon: "📍", text: "Frankton, Hanley's Farm & Jack's Point" },
         { icon: "🩺", text: "Pet first aid" },
         { icon: "📱", text: "WhatsApp updates" },
         { icon: "🔄", text: "Flexible cancellation" },
@@ -196,9 +196,9 @@ const SITE = {
       gallery_bio1:
         "I'm Ana Paula, a veterinarian from Argentina who fell in love with New Zealand and never left. My years working with small animals taught me how to read dogs, handle them safely, and give them the care they truly deserve.",
       gallery_bio2:
-        "Now based in Frankton, I bring that same dedication to every walk. Whether it's your pup's first outing or their daily routine, I treat every dog with the patience and expertise of a vet — and a whole lot of love. I cover Frankton, Hanley Farm and Jack Point.",
+        "Now based in Frankton, I bring that same dedication to every walk. Whether it's your pup's first outing or their daily routine, I treat every dog with the patience and expertise of a vet — and a whole lot of love. I cover Frankton, Hanley's Farm and Jack's Point.",
       gallery_badge1: "Veterinary background",
-      gallery_badge2: "Frankton, Hanley Farm & Jack Point",
+      gallery_badge2: "Frankton, Hanley's Farm & Jack's Point",
       gallery_badge3: "",
       gallery_badge4: "",
       photo_main_label: "[Photo: Ana walking with dogs]",
@@ -264,9 +264,9 @@ const SITE = {
       about_bio1:
         "I'm Ana Paula Ferrer, a veterinarian from Argentina now living in Frankton, New Zealand. After years working with small animals in clinical practice, I decided to take my love for animals outdoors — and dog walking felt like the perfect fit.",
       about_bio2:
-        "Every dog I walk gets the same care and attention I gave my patients. I cover Frankton, Hanley Farm and Jack Point — because your dog deserves someone who genuinely understands animals.",
+        "Every dog I walk gets the same care and attention I gave my patients. I cover Frankton, Hanley's Farm and Jack's Point — because your dog deserves someone who genuinely understands animals.",
       about_badge1: "Veterinarian — small animal specialist",
-      about_badge2: "Based in Frankton · Hanley Farm & Jack Point",
+      about_badge2: "Based in Frankton · Hanley's Farm & Jack's Point",
       about_badge3: "",
       about_badge4_pre: " rating · ", // sandwiched between rating + walks (hidden)
       about_badge4_suf: " walks completed",
@@ -386,7 +386,7 @@ const SITE = {
         { icon: "🩺", text: "Formación veterinaria" },
         { icon: "📸", text: "Fotos en cada paseo" },
         { icon: "✅", text: "Walker verificada" },
-        { icon: "📍", text: "Frankton, Hanley Farm y Jack Point" },
+        { icon: "📍", text: "Frankton, Hanley's Farm y Jack's Point" },
         { icon: "🩺", text: "Primeros auxilios pet" },
         { icon: "📱", text: "Actualizaciones por WhatsApp" },
         { icon: "🔄", text: "Cancelación flexible" },
@@ -438,9 +438,9 @@ const SITE = {
       gallery_bio1:
         "Soy Ana Paula, veterinaria argentina enamorada de Nueva Zelanda. Años trabajando con pequeños animales en clínica me enseñaron a leer a los perros, manejarlos con seguridad y darles el cuidado que merecen.",
       gallery_bio2:
-        "Hoy, desde Frankton, llevo esa misma dedicación a cada paseo. Trato a cada perro con la paciencia y el conocimiento de una veterinaria — y con mucho, mucho cariño. Cubro Frankton, Hanley Farm y Jack Point.",
+        "Hoy, desde Frankton, llevo esa misma dedicación a cada paseo. Trato a cada perro con la paciencia y el conocimiento de una veterinaria — y con mucho, mucho cariño. Cubro Frankton, Hanley's Farm y Jack's Point.",
       gallery_badge1: "Formación veterinaria",
-      gallery_badge2: "Frankton, Hanley Farm y Jack Point",
+      gallery_badge2: "Frankton, Hanley's Farm y Jack's Point",
       gallery_badge3: "",
       gallery_badge4: "",
       photo_main_label: "[Foto: Ana caminando con perros]",
@@ -503,9 +503,9 @@ const SITE = {
       about_bio1:
         "Soy Ana Paula Ferrer, veterinaria argentina que vive en Frankton, Nueva Zelanda. Después de años trabajando con pequeños animales en clínica, decidí combinar mi pasión con la libertad del trabajo al aire libre.",
       about_bio2:
-        "Cada perro que paseo recibe el mismo cuidado y atención que daba a mis pacientes. Me muevo por Frankton, Hanley Farm y Jack Point — tu perro merece alguien que realmente entienda de animales.",
+        "Cada perro que paseo recibe el mismo cuidado y atención que daba a mis pacientes. Me muevo por Frankton, Hanley's Farm y Jack's Point — tu perro merece alguien que realmente entienda de animales.",
       about_badge1: "Veterinaria — especialista en pequeños animales",
-      about_badge2: "Frankton, Hanley Farm y Jack Point",
+      about_badge2: "Frankton, Hanley's Farm y Jack's Point",
       about_badge3: "",
       about_badge4_pre: " de calificación · ",
       about_badge4_suf: " paseos realizados",
